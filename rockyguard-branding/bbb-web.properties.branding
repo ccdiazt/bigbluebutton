@@ -1,0 +1,8 @@
+# --- Branding RockyGuard dentro de la sala (2026-08-16) ---
+useDefaultLogo=true
+defaultLogoURL=https://bbb.rockyguard.tech/rg-logo-light-bg.svg
+useDefaultDarkLogo=true
+defaultDarkLogoURL=https://bbb.rockyguard.tech/logo-rockyguard.svg
+defaultWelcomeMessage=Te damos la bienvenida a <b>%%CONFNAME%%</b> / Welcome to <b>%%CONFNAME%%</b>.<br><br>Para unirte al audio, haz clic en el bot&oacute;n del altavoz. / To join the audio bridge, click the speaker button.
+defaultWelcomeMessageFooter=Videoconferencia segura de <a href="https://www.rockyguard.com" target="_blank"><u>RockyGuard Technologies</u></a>. / Secure video conferencing by RockyGuard Technologies.
+beans.presentationService.defaultUploadedPresentation=https://bbb.rockyguard.tech/rg-default.pdf

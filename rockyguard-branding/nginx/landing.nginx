@@ -1,0 +1,15 @@
+# Portada corporativa RockyGuard — sirve la raiz exacta "/" desde /etc/bigbluebutton/branding/landing
+# (directorio que los upgrades de BBB no tocan). Todas las demas rutas siguen yendo a Greenlight.
+location = / {
+    root /etc/bigbluebutton/branding/landing;
+    try_files /index.html =404;
+}
+location = /rg-logo-light-bg.svg {
+    root /etc/bigbluebutton/branding/landing;
+}
+location = /logo-rockyguard.svg {
+    root /etc/bigbluebutton/branding/landing;
+}
+location = /rg-default.pdf {
+    root /etc/bigbluebutton/branding/landing;
+}

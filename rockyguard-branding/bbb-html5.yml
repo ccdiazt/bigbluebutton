@@ -1,0 +1,10 @@
+public:
+  kurento:
+    wsUrl: wss://bbb.rockyguard.tech/bbb-webrtc-sfu
+  pads:
+    url: https://bbb.rockyguard.tech/pad
+  media:
+    sipjsHackViaWs: true
+  app:
+    clientTitle: RockyGuard
+    copyright: ©2026 RockyGuard Technologies LTD

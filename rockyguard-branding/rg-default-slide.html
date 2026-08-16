@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<style>
+  @page { size: 960pt 540pt; margin: 0; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:960pt; height:540pt; }
+  body {
+    font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+    color:#e2e8f0; position:relative; overflow:hidden;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  .bg { position:absolute; inset:0; background:#0B1621; }
+  .glow { position:absolute; inset:0;
+    background:
+      radial-gradient(420pt 280pt at 12% -8%, rgba(6,182,212,.16), transparent 70%),
+      radial-gradient(480pt 340pt at 88% 108%, rgba(5,150,105,.14), transparent 70%); }
+  .content { position:relative; text-align:center; }
+  .logo { display:flex; align-items:center; justify-content:center; gap:18pt; }
+  .word { text-align:left; }
+  .word .n { font-size:34pt; font-weight:700; color:#ffffff; letter-spacing:-.5pt; }
+  .word .t { font-size:13pt; font-weight:400; color:rgba(255,255,255,.55); letter-spacing:6pt; margin-top:2pt; }
+  h1 { margin-top:34pt; font-size:44pt; font-weight:600; letter-spacing:-1pt; color:#ffffff; }
+  h1 .grad { color:#34d399; }
+  .sub { margin-top:16pt; font-size:17pt; color:#94a3b8; }
+  .rule { margin:30pt auto 0; width:60pt; height:2pt; background:linear-gradient(90deg,#06b6d4,#059669); border-radius:1pt; }
+  .foot { position:absolute; bottom:26pt; left:0; right:0; text-align:center; font-size:12pt; color:#64748b; letter-spacing:.5pt; }
+  .foot b { color:#94a3b8; font-weight:600; }
+</style>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="glow"></div>
+  <div class="content">
+    <div class="logo">
+      <svg width="96" height="86" viewBox="0 0 40 36" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <defs>
+          <linearGradient id="sg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#06b6d4"/><stop offset="100%" stop-color="#059669"/>
+          </linearGradient>
+        </defs>
+        <path d="M20 2 L8 9 L8 27 L20 34 L32 27 L32 9 Z" fill="url(#sg)"/>
+        <path d="M14 18 L18 22 L27 12" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="word">
+        <div class="n">RockyGuard</div>
+        <div class="t">TECHNOLOGIES</div>
+      </div>
+    </div>
+    <h1>Bienvenido · <span class="grad">Welcome</span></h1>
+    <p class="sub">Videoconferencia segura sobre infraestructura propia · Secure video conferencing on our own infrastructure</p>
+    <div class="rule"></div>
+  </div>
+  <div class="foot"><b>www.rockyguard.com</b> · Edmonton, Alberta · Certeza verificable para el mundo físico</div>
+</body>
+</html>
