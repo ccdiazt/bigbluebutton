@@ -13,3 +13,10 @@ location = /logo-rockyguard.svg {
 location = /rg-default.pdf {
     root /etc/bigbluebutton/branding/landing;
 }
+
+# Fix: la SPA de Greenlight navega a "/" con client-side routing (History API) al cerrar
+# sesion, por lo que nunca llega a nginx y muestra su propio home hasta hacer refresh.
+# Este script inyectado en el <head> de las paginas HTML convierte toda navegacion
+# interna a "/" en una carga completa, que si pasa por nginx y sirve la portada.
+sub_filter '</head>' '<script>(function(){function g(f){return function(s,t,u){if(u==="/"||u===location.origin+"/"){location.href="/";return}return f.call(history,s,t,u)}}history.pushState=g(history.pushState);history.replaceState=g(history.replaceState)})();</script></head>';
+sub_filter_once on;
