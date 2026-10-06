@@ -13,6 +13,7 @@ no se modifica ningún archivo empaquetado. Aplicado y verificado el 2026-08-16
 | `nginx/landing.nginx` | `/etc/bigbluebutton/nginx/landing.nginx` | Sirve `/` y los assets de marca desde el directorio de branding; el resto de rutas sigue a Greenlight |
 | `bbb-web.properties.branding` | anexar a `/etc/bigbluebutton/bbb-web.properties` | Logos claro/oscuro en sala, bienvenida bilingüe, presentación por defecto |
 | `bbb-html5.yml` | `/etc/bigbluebutton/bbb-html5.yml` | `clientTitle` y `copyright` (⚠️ conserva también las claves que `bbb-conf --setip` escribe: `kurento.wsUrl`, `pads.url`) |
+| `ai-notes/` + `landing/rg-ai-notes.js` | ver `ai-notes/README.md` | Interruptor "Asistente de IA" en Settings de las salas (BBB AI Notes); bitácora `BITACORA-2026-10-06.md` |
 | `rg-default-slide.html` | (fuente, no se despliega) | HTML del slide de bienvenida; se convierte a PDF con Chrome headless |
 
 El branding de **Greenlight** (colores + logo de cabecera) no son archivos: viven en su Postgres/volumen.
